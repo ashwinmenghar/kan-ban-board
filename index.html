@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="board-container">
+      <!-- Todo Board -->
+      <div id="todo-board" class="board">
+        <div class="task-block">
+          <div class="board-header">
+            <div class="board-icon"></div>
+            <span class="board-title">Todo</span>
+            <span class="board-count">0</span>
+          </div>
+          <span class="board-description">This item hasn't been started</span>
+  
+          <p class="tasks" draggable="true">Task 1</p>
+          <p class="tasks" draggable="true">Task 2</p>
+          <p class="tasks" draggable="true">Task 3</p>
+        </div>
+
+        <div class="input-container">
+          <input placeholder="Type your todo..." id="todo-input" />
+          <!-- HTML !-->
+          <button class="add-button todo-button" role="button" id="">Add</button>
+        </div>
+      </div>
+
+      <!-- In Progress Board -->
+      <div class="board" id="progress-board">
+        <div class="task-block">
+          <div class="board-header">
+            <div class="board-icon"></div>
+            <span class="board-title">In Progress</span>
+            <span class="board-count">0</span>
+          </div>
+          <span class="board-description">This is actively being worked on</span>
+  
+          <p class="tasks" draggable="true">Task 4</p>
+        </div>
+
+        <div class="input-container">
+          <input placeholder="Type your todo..." id="todo-input" />
+          <!-- HTML !-->
+          <button class="add-button progress-button" role="button" id="">Add</button>
+        </div>
+      </div>
+
+      <!-- Done Board -->
+      <div class="board" id="done-board">
+        <div class="task-block">
+          <div class="board-header">
+            <div class="board-icon"></div>
+            <span class="board-title">Done</span>
+            <span class="board-count">3</span>
+          </div>
+          <span class="board-description">This has been completed</span>
+        </div>
+
+        <div class="input-container">
+          <input placeholder="Type your todo..." id="todo-input" />
+          <!-- HTML !-->
+          <button class="add-button done-button" role="button" id="">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="util.js"></script>
+    <script src="kanban.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
